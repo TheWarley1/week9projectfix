@@ -1,0 +1,140 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    }
+
+    body {
+        width: 100%;
+        height: 100vh;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        background-color: hsl(0, 0%, 94%);
+    }
+
+    .card{   
+        background-color: hsl(0, 0%, 100%);
+        width: 40rem;
+        height: 33rem;
+        padding: 2rem;
+        border-radius: 1rem 1rem 30% 1rem;
+    }
+
+    label{
+        font-family: 'Poppins', sans-serif;
+        text-transform: uppercase;
+        color: hsl(0, 1%, 44%);
+    }
+
+    .period {
+        padding-bottom: 0.3rem;
+        font-size: 0.6rem;
+        font-weight: bolder;
+    }
+
+    .input-style {
+        padding: 0.8rem 0.5rem;
+        width: 7rem;
+        border-radius: 0.3rem;
+    }
+
+    .form-container{
+        display: flex;
+        /* margin-left: 4rem; */
+        margin-bottom: 2.5rem;
+    }
+
+    .input-grid {
+        padding-right: 2rem;
+    }
+
+    .line{
+        height: 0.1rem;
+        width: 500px;
+        background-color: hsl(0, 0%, 86%);
+    }
+
+    .btn{
+        display: flex;
+        justify-content: center; 
+    align-items: center;
+    }
+
+    button{
+        background-color: hsl(259, 100%, 65%);
+        border-radius: 100%;
+        padding: 0.5rem;
+        border: none;
+        align-items: right;
+        }
+
+    .result{
+        font-family: 'Poppins', sans-serif;
+        font-style: italic;
+        font-weight: bolder;
+        font-size: 3.9rem;
+    }
+
+    .second-period{
+        color: hsl(259, 100%, 65%);
+        font-size: 4rem;
+    }
+
+    @media screen and (max-width: 600px) {
+
+        body {
+            margin: 2rem;
+            padding: 0rem;
+            }
+    
+        .card {
+            width: 19rem;
+            height: 32rem;
+            margin: 2rem;
+            display: grid;
+            border-bottom-right-radius: 4.5rem;
+            align-items: center;
+            justify-content: center;
+            padding-left: 2.5rem;
+            }
+
+            .input-style {
+                padding-right: 0.1rem;
+                width: 5rem;
+                border-radius: 0.3rem;
+            }
+
+            .input-grid {
+                padding-right: 0.8rem;
+            }
+
+            .btn{
+                display: grid;
+                max-width: 100%;
+                height: auto;
+            }
+
+            .line{
+                width: 17rem;
+            }
+
+            .button{
+                object-position: center;
+                border-radius: 100%;
+                margin-right: 20rem;
+            }
+
+            .result{
+                font-family: 'Poppins', sans-serif;
+                font-style: italic;
+                font-weight: bolder;
+                font-size: 2.5rem;
+                padding-top: 0rem;
+            }
+
+            .second-period{
+                color: hsl(259, 100%, 65%);
+                font-size: 3rem;
+            }
+    }

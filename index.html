@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./assets/images/favicon-32x32.png"
+    />
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,700;1,400;1,800&display=swap"
+      rel="stylesheet"
+    />
+
+    <link rel="stylesheet" href="./styles.css" />
+
+    <title>Age calculator app</title>
+  </head>
+
+  <body>
+    <div class="container">
+      <div class="card">
+        <div class="house">
+          <form action="form-body">
+            <div class="form-container">
+              <div class="input-grid">
+                <div class="period">
+                  <label for="">Day</label>
+                </div>
+                <div>
+                  <input
+                    type="text"
+                    class="input-style"
+                    name="day"
+                    id="date"
+                    placeholder="DD"
+                    required="required"
+                    minlength="1"
+                    maxlength="2"
+                  />
+                </div>
+              </div>
+
+              <div class="input-grid">
+                <div class="period">
+                  <label for="">Month</label>
+                </div>
+                <div>
+                  <input
+                    type="text"
+                    class="input-style"
+                    name="month"
+                    id="month"
+                    placeholder="MM"
+                    required="required"
+                    minlength="1"
+                    maxlength="2"
+                  />
+                </div>
+              </div>
+
+              <div class="input-grid">
+                <div class="period">
+                  <label for="">Year</label>
+                </div>
+                <div>
+                  <input
+                    type="text"
+                    class="input-style"
+                    name="year"
+                    id="year"
+                    placeholder="YYYY"
+                    required="required"
+                    minlength="4"
+                    maxlength="4"
+                  />
+                </div>
+              </div>
+            </div>
+          </form>
+
+          <div class="btn">
+            <div class="line"></div>
+            <button>
+              <img src="/assets/images/icon-arrow.svg" alt="image" />
+            </button>
+          </div>
+
+          <div class="result">
+            <div class="result year">
+              <span class="second-period">--</span> years
+            </div>
+            <div class="result month">
+              <span class="second-period">--</span> months
+            </div>
+            <div class="result day">
+              <span class="second-period">--</span> days
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <script src="./index.js"></script>
+  </body>
+</html>
